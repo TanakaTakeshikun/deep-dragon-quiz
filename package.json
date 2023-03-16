@@ -1,7 +1,7 @@
 {
   "name": "tenon",
   "version": "1.0.0",
-  "description": "よくわからんプロジェクト",
+  "description": "quizapp",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
@@ -9,9 +9,11 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "node-env-run server --exec nodemon | pino-colada",
-    "dev": "run-p server start"
+    "dev": "run-p server start",
+    "s": "npm run start && node-env-run server  --exec nodemon | pino-colada",
+    "setup": "npm i && cd src && npm i"
   },
-  "proxy": "http://localhost:3001",
+  "proxy": "http://localhost:3000",
   "keywords": [
     "quiz",
     "react",
